@@ -1,14 +1,3 @@
-/*
-    Name: Arnav Kumar Behera
-    Roll:20CS01070
-    Assigment 3A client
-*/
-
-/*
-    Format of requests
-    [ADD/MUL/SUB/DIV] [arg1] [arg2]
-    ADD... etc commands must be in uppercase.
-*/
 #include<bits/stdc++.h>
 #include <sys/socket.h>
 #include <arpa/inet.h>
