@@ -150,6 +150,7 @@ int main(int argv,char **argc)
     {
         string s=server.recieve();
         if(!s.size()) continue;
+        cout<<"Recieved Request for "<<s<<endl;
         if(isalpha(s[0])){
             if(numberof.count(s))
                 server.sendy(numberof[s]);

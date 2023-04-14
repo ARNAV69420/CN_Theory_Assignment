@@ -135,7 +135,8 @@ int main(int argc,char **argv)
     for(int i=1;i<argc;i++)
         welcome_message+=string(argv[i])+" ";
     while(1){
-        server.recieve();
+        string req=server.recieve();
+        cout<<"Recieved request from client: "<<req<<endl;
         server.sendy(welcome_message);
     }
     server.closeServer();

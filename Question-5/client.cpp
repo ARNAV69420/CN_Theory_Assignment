@@ -132,7 +132,6 @@ int main(int argv,char **argc)
     string s;
     for(int i=2;i<argv;i++) s+=string(argc[i])+" ";
     s=s.substr(0,s.size()-1);
-    cout<<s.size()<<endl;
     client.sendy(s);
     cout<<"corrsponding values of name/phone number are: "<<endl;
     cout<<client.recieve()<<endl;
